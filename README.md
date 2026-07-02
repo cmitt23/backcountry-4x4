@@ -4,10 +4,11 @@ A free-roam browser wheeling game. One self-contained `index.html` — Three.js 
 
 ## Play
 
-Double-click `index.html` (or serve the folder and open it — jump straight into a map with `?biome=desert|mountain|hills`).
+Play at **https://cmitt23.github.io/backcountry-4x4/**, or double-click `index.html` (or serve the folder and open it — jump straight into a map with `?biome=desert|mountain|hills`).
 
 - **W A S D** drive · **Space** handbrake · **Shift** nitrous (5 s stints)
 - **E / Q** suspension lift up / down — clearance vs. tip-over risk, live
+- **X / Z** tire size up / down — bigger tires clear more rock but gear taller; steep climbs on 46s want 4-Lo
 - **T** 2WD/4WD · **G** 4-Hi/4-Lo crawler gear
 - **C** camera (chase / hood / free orbit — drag to look) · **L** lights
 - **R** flip upright in place · **Backspace** reset to spawn · **H** help · **M** map select · **V** mute
