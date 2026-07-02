@@ -135,7 +135,7 @@
       <span class="seg"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span>
     </span>
   </div>
-  <div id="bc"><div id="speed">0</div><div class="unit">km/h</div></div>
+  <div id="bc"><div id="speed">0</div><div class="unit">mph</div></div>
   <div id="br">
     <span class="chip" id="tiltwrap">
       <svg id="tilticon" width="46" height="30" viewBox="0 0 46 30">
@@ -1588,7 +1588,7 @@ const HUD={
   },
   update(dt,jeep,fps){
     this._acc+=dt;
-    this.el.speed.textContent=Math.round(jeep.speed*3.6);
+    this.el.speed.textContent=Math.round(jeep.speed*2.23694);
     if(this.toastT>0){this.toastT-=dt;if(this.toastT<=0)this.el.toast.classList.remove('show')}
     if(this._acc<0.12)return;
     this._acc=0;
@@ -1806,7 +1806,7 @@ window.GAME={
     return {state:app.state,fps:Math.round(app.fps),
       x:+p.x.toFixed(1),y:+p.y.toFixed(1),z:+p.z.toFixed(1),
       terrainY:+app.hf.heightAt(p.x,p.z).toFixed(1),
-      kmh:+(j.speed*3.6||0).toFixed(1),grounded:j.groundCount,
+      mph:+(j.speed*2.23694||0).toFixed(1),grounded:j.groundCount,
       gear:j.gear+1,rpm:Math.round(j.rpm),surf:app.surfaceKey(p.x,p.z),
       roll:+(j.roll*57.3||0).toFixed(1),pitch:+(j.pitch*57.3||0).toFixed(1),
       nitro:+j.nitro.charge.toFixed(1),lift:+j.lift.toFixed(2),tireIn:Math.round(j.wheelR*2*39.37),cam:app.cams?app.cams.mode:0};
